@@ -2,9 +2,9 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: *naam van het spel*
 Gemaakt door:
-- Divya 
-- Indy
-- Bente
+- Divya Raghoenandan
+- Indy van Gastel
+- Bente de Boon
 
 ## Mijn planning
 
