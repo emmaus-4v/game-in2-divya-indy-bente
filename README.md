@@ -1,6 +1,6 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *naam van het spel*
+## Mijn spel: FlappyFish
 Gemaakt door:
 - Divya Raghoenandan
 - Indy van Gastel
@@ -12,12 +12,13 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
 - [ ] teken speler
 - [ ] beweeg speler
-- [ ] ... *(vul zelf aan)*
+- [ ] teken achtergrond (lucht/wolken)
+- [ ] teken buizen (of iets anders)
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren
 - [ ] uitlegscherm
 
-Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
+Uitbreiding: Tegenstanders die uit buizen komen
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
