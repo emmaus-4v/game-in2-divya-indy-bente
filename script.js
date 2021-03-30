@@ -91,7 +91,7 @@ var tekenKogel = function(x, y) {
  */
 var tekenSpeler = function(x, y) {
   fill("darkorange");
-  ellipse(x, y, 70, 50);
+  ellipse(x, y + 290, 90, 50);
 };
 
 
