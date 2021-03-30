@@ -90,7 +90,7 @@ var tekenKogel = function(x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function(x, y) {
-  fill("purple");
+  fill("darkorange");
   ellipse(x, y, 70, 50);
 };
 
