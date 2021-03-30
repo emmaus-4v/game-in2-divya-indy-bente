@@ -90,8 +90,10 @@ var tekenKogel = function(x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function(x, y) {
-  fill("darkorange");
-  ellipse(x, y + 290, 90, 50);
+    fill("darkorange");
+  ellipse(x, y + 290, 95, 50);
+  fill("chocolate")
+  triangle( 100, 410, 100, 360, 156, 386)
 };
 
 
