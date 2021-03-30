@@ -94,10 +94,13 @@ var tekenSpeler = function(x, y) {
     ellipse(x, y + 290, 95, 50);
     fill("chocolate")
     triangle( 100, 410, 100, 360, 156, 386)
+    fill("chocolate")
+    triangle( 200, 390, 190, 420, 180, 390)
     fill('white')
     ellipse(x + 25, y + 285, 18, 18);
     fill('black')
     ellipse(x + 25, y + 285, 10, 10);
+    
 };
 
 
