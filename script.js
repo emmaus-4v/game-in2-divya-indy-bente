@@ -48,6 +48,8 @@ var score = 0; // aantal behaalde punten
 var tekenVeld = function () {
   fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
+  fill("white")
+  ellipse(50,50, 50, 50);
 };
 
 
