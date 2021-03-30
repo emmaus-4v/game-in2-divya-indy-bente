@@ -81,7 +81,7 @@ var tekenKogel = function(x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function(x, y) {
-  fill("white");
+  fill("purple");
   ellipse(x, y, 50, 50);
 };
 
