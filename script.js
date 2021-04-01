@@ -60,8 +60,10 @@ var tekenVeld = function () {
   fill("white")
   ellipse(180, 135, 50, 50); //wolk
   
+  // eerste buis
   fill("green")
-  rect(50, 5, 40, 270);
+  rect(50, 5, 45, 270);
+  rect(70, 300, 45, 390);
 };
 
 
