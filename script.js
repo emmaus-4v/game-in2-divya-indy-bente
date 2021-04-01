@@ -50,7 +50,7 @@ var tekenVeld = function () {
   rect(20, 20, width - 2 * 20, height - 2 * 20);
  noStroke();
   fill("white")
-  ellipse(150,150, 50, 50);
+  ellipse(150,150, 50, 50); //wolk
   fill("white")
   ellipse(180,180, 50, 50);
   fill("white")
@@ -58,7 +58,10 @@ var tekenVeld = function () {
   fill("white")
   ellipse(210, 150, 50, 50);
   fill("white")
-  ellipse(180, 135, 50, 50);
+  ellipse(180, 135, 50, 50); //wolk
+  
+  fill("green")
+  rect(50, 5, 40, 270);
 };
 
 
