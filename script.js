@@ -94,7 +94,7 @@ var tekenKogel = function(x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-draw = function(x, y) {
+var tekenSpeler = function(x, y) {
     fill("darkorange");
     ellipse(x, y + 290, 95, 50);
     fill("chocolate")
