@@ -63,7 +63,7 @@ var tekenVeld = function () {
   // eerste buis
   fill("green")
   rect(50, 5, 45, 270);
-  rect(70, 400, 45, 800);
+  rect(70, 300, 45, 390);
 };
 
 
@@ -98,17 +98,15 @@ var tekenSpeler = function(x, y) {
     fill("darkorange");
     ellipse(x, y + 290, 95, 50);
     fill("chocolate")
-    triangle( 100, 410, 100, 360, 156, 386)
+    triangle( x + 100, y + 410, 100, 360, 156, 386)
     fill("chocolate")
-    triangle( 200, 390, 190, 420, 180, 390)
+    triangle( x + 200, y+ 390, 190, 420, 180, 390)
     fill('white')
     ellipse(x + 25, y + 285, 18, 18);
     fill('black')
     ellipse(x + 25, y + 285, 10, 10);
     
 };
-
-
 
 
 /**
@@ -177,7 +175,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('blue');
+  background('skyblue');
 }
 
 
