@@ -98,9 +98,9 @@ var tekenSpeler = function(x, y) {
     fill("darkorange");
     ellipse(x, y + 290, 95, 50);
     fill("chocolate")
-    triangle( x + 100, y + 410, 100, 360, 156, 386)
+    triangle( 100, 410, 100, 360, 156, 386)
     fill("chocolate")
-    triangle( x + 200, y+ 390, 190, 420, 180, 390)
+    triangle(  200, 390, 190, 420, 180, 390)
     fill('white')
     ellipse(x + 25, y + 285, 18, 18);
     fill('black')
@@ -175,7 +175,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('skyblue');
+  background('blue');
 }
 
 
