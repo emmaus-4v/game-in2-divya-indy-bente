@@ -63,7 +63,7 @@ var tekenVeld = function () {
   // eerste buis
   fill("green")
   rect(50, 5, 45, 270);
-  rect(70, 300, 45, 390);
+  rect(70, 300, 45, 350);
 };
 
 
