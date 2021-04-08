@@ -108,6 +108,10 @@ var tekenSpeler = function(x, y) {
     
 };
 
+draw = function (){
+    tekenSpeler= x + 1;
+}
+
 
 /**
  * Updatet globale variabelen met positie van vijand of tegenspeler
