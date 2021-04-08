@@ -108,9 +108,7 @@ var tekenSpeler = function(x, y) {
     
 };
 
-draw = function (){
-    tekenSpeler= x + 1;
-}
+
 
 
 /**
