@@ -94,14 +94,15 @@ var tekenKogel = function(x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-var x = 0;
-var y = 0;
+
 
 var tekenSpeler = function(x, y) {
+    fill("black");
+    ellipse(x,y,5,5); // midden
     fill("darkorange");
     ellipse(x, y + 290, 95, 50);
     fill("chocolate")
-    triangle( 100, 410, 100, 360, 156, 386)
+    triangle( x-100, 310+y, 100, 360, 156, 386)
     fill("chocolate")
     triangle(  200, 390, 190, 420, 180, 390)
     fill('white')
@@ -133,6 +134,7 @@ var beweegKogel = function() {
  * Updatet globale variabele spelerX en spelerY
  */
 var beweegSpeler = function() {
+   
 
 };
 
