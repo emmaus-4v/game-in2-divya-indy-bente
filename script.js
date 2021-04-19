@@ -105,7 +105,7 @@ var tekenSpeler = function(x, y) {
     fill("chocolate")
     triangle(x-100, 310+y-300, 100+x-200, 360+y-100-300, 156+x-200, 386+y-100-300)
     fill("chocolate")
-    triangle(  200, 390, 190, 420, 180, 390)
+    triangle(  x, 390, 190, 420, 180, 390)
     fill('white')
     ellipse(x + 25, y + 285, 18, 18);
     fill('black')
