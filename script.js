@@ -102,13 +102,13 @@ var tekenSpeler = function(x, y) {
     ellipse(x,y,50,50); // midden
     fill("darkorange");
     ellipse(x, y, 95, 50); // lijf
-    fill("chocolate")
-    triangle(x-100, 310+y-300, 100+x-200, 360+y-100-300, 156+x-200, 386+y-100-300)
-    fill("chocolate")
-    triangle(  x, 390, 190, 420, 180, 390)
-    fill('white')
+    fill("chocolate");
+    triangle(x-100, 310+y-300, 100+x-200, 360+y-100-300, 156+x-200, 386+y-100-300);
+    fill("chocolate");
+    triangle(x, 390+y-100, 190+x-200, 420+y-100, 180+x-200, 390+y-100);
+    fill('white');
     ellipse(x + 25, y + 285, 18, 18);
-    fill('black')
+    fill('black');
     ellipse(x + 25, y + 285, 10, 10);
     
 };
