@@ -103,7 +103,7 @@ var tekenSpeler = function(x, y) {
     fill("darkorange");
     ellipse(x, y+285, 95, 50); // lijf
     fill("chocolate");
-    triangle(x-100, 310+y-300, 100+x-200, 360+y-100-300, 156+x-200, 386+y-100-300);
+    triangle(x-100, 310+y, 100+x-200, 360+y-100, 156+x-200, 386+y-100);
     fill("chocolate");
     triangle(x, 390+y-100, 190+x-200, 420+y-100, 180+x-200, 390+y-100);
     fill('white');
