@@ -97,11 +97,11 @@ var tekenKogel = function(x, y) {
 
 
 var tekenSpeler = function(x, y) {
-    fill("black");
+    
     console.log(x);
-    ellipse(x,y,50,50); // midden
+    
     fill("darkorange");
-    ellipse(x, y, 95, 50); // lijf
+    ellipse(x, y+285, 95, 50); // lijf
     fill("chocolate");
     triangle(x-100, 310+y-300, 100+x-200, 360+y-100-300, 156+x-200, 386+y-100-300);
     fill("chocolate");
