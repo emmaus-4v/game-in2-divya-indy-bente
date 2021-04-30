@@ -122,15 +122,15 @@ var tekenSpeler = function(x, y) {
     console.log(x);
     
     fill("darkorange");
-    ellipse(x, y+285, 95, 50); // lijf
+    ellipse(spelerX, spelerY+285, 95, 50); // lijf
     fill("chocolate");
-    triangle(x-100, 310+y, 100+x-200, 360+y-100, 156+x-200, 386+y-100);
+    triangle(spelerX-100, 310+spelerY, 100+spelerX-200, 360+spelerY-100, 156+spelerX-200, 386+spelerY-100);
     fill("chocolate");
-    triangle(x, 390+y-100, 190+x-200, 420+y-100, 180+x-200, 390+y-100);
+    triangle(spelerX, 390+spelerY-100, 190+spelerX-200, 420+spelerY-100, 180+spelerX-200, 390+spelerY-100);
     fill('white');
-    ellipse(x + 25, y + 285, 18, 18);
+    ellipse(spelerX + 25, spelerY + 285, 18, 18);
     fill('black');
-    ellipse(x + 25, y + 285, 10, 10);
+    ellipse(spelerX + 25, spelerY + 285, 10, 10);
     
 };
 
@@ -148,6 +148,7 @@ var beweegVijand = function() {
  */
 var beweegKogel = function() {
 
+
 };
 
 
@@ -156,6 +157,9 @@ var beweegKogel = function() {
  * Updatet globale variabele spelerX en spelerY
  */
 var beweegSpeler = function() {
+
+
+
    
 
 };
