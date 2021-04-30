@@ -49,40 +49,40 @@ var tekenVeld = function () {
   fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
  noStroke();
-  fill("white")//wolk 1
+  fill("white");//wolk 1
   ellipse(150,150, 50, 50); 
-  fill("white")
+  fill("white");
   ellipse(180,180, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(180, 120, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(210, 150, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(180, 135, 50, 50);
-  fill("white")// wolk 2
+  fill("white");// wolk 2
   ellipse(250, 250, 50, 50); //linker bolletje 
-  fill("white")
+  fill("white");
   ellipse(280, 266, 50, 50);//onderste bolletje
-  fill("white")
+  fill("white");
   ellipse(280, 220, 50, 50);//bovenste bolletje
-  fill("white")
+  fill("white");
   ellipse(315, 250, 50, 50);//rechter bolletje 
-  fill("white")
+  fill("white");
   ellipse(285, 235, 50, 50); //midden bolletje 
-  fill("white")//wolk 3
+  fill("white");//wolk 3
   ellipse(350, 550, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(380, 566, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(380, 520, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(410, 550, 50, 50);
-  fill("white")
+  fill("white");
   ellipse(380, 535, 50, 50); 
 
   
   // eerste buis
-  fill("green")
+  fill("green");
   rect(50, 5, 45, 270);
   rect(70, 390, 45, 400);
 };
@@ -112,15 +112,12 @@ var tekenKogel = function(x, y) {
 
 /**
  * Tekent de speler
- * @param {number} x x-coördinaat
- * @param {number} y y-coördinaat
+ * @param {number} spelerX x-coördinaat
+ * @param {number} spelerY y-coördinaat
  */
 
 
-var tekenSpeler = function(x, y) {
-    
-    console.log(x);
-    
+var tekenSpeler = function(spelerX, spelerY) {
     fill("darkorange");
     ellipse(spelerX, spelerY+285, 95, 50); // lijf
     fill("chocolate");
@@ -157,11 +154,12 @@ var beweegKogel = function() {
  * Updatet globale variabele spelerX en spelerY
  */
 var beweegSpeler = function() {
-
-
-
-   
-
+if (mouseIsPressed) {
+    spelerY -= 10;
+}
+else {
+    spelerY += 1;
+}
 };
 
 
