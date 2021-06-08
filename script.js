@@ -80,6 +80,13 @@ var tekenVeld = function () {
         vijandX = random (1250, 1500);
     }
 
+    tekenveld ()
+    var offset = 0;
+    offset= offset + 1;
+    if (offset > 1280) {
+        offset = 0;
+    }
+
 };
 
 
