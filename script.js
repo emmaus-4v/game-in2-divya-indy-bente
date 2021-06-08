@@ -82,9 +82,17 @@ var tekenVeld = function () {
 
   
   // eerste buis
+
   fill("green");
-  rect(50, 5, 45, 270);
-  rect(70, 390, 45, 400);
+
+  while (vijandX<1280 && vijandY<720){
+      rect(random(min: 40, max: 60), random(min:3, max:7), 45, 270);
+    rect(random(min:60, max: 80), random (min: 380, max: 400), 45, 400);
+  x =
+  };
+ 
+
+
 };
 
 
