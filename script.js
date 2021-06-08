@@ -160,7 +160,7 @@ if (mouseIsPressed) {
     spelerY -= 10;
 }
 else {
-    spelerY += 1;
+    spelerY += 2;
 }
 };
 
