@@ -51,46 +51,30 @@ var tekenVeld = function () {
  noStroke();
   fill("white");//wolk 1
   ellipse(150,150, 50, 50); 
-  fill("white");
   ellipse(180,180, 50, 50);
-  fill("white");
   ellipse(180, 120, 50, 50);
-  fill("white");
   ellipse(210, 150, 50, 50);
-  fill("white");
   ellipse(180, 135, 50, 50);
-  fill("white");// wolk 2
+  // wolk 2
   ellipse(250, 250, 50, 50); //linker bolletje 
-  fill("white");
   ellipse(280, 266, 50, 50);//onderste bolletje
-  fill("white");
   ellipse(280, 220, 50, 50);//bovenste bolletje
-  fill("white");
   ellipse(315, 250, 50, 50);//rechter bolletje 
-  fill("white");
   ellipse(285, 235, 50, 50); //midden bolletje 
-  fill("white");//wolk 3
+  //wolk 3
   ellipse(350, 550, 50, 50);
-  fill("white");
   ellipse(380, 566, 50, 50);
-  fill("white");
   ellipse(380, 520, 50, 50);
-  fill("white");
   ellipse(410, 550, 50, 50);
-  fill("white");
+ 
   ellipse(380, 535, 50, 50); 
 
   
   // eerste buis
 
   fill("green");
-
-  while (vijandX<1280 && vijandY<720){
-      rect(random(min: 40, max: 60), random(min:3, max:7), 45, 270);
-    rect(random(min:60, max: 80), random (min: 380, max: 400), 45, 400);
-  x =
-  };
- 
+    rect(45, 5, 45, 270);
+    rect(70, 390, 45, 400);
 
 
 };
