@@ -80,7 +80,7 @@ var tekenVeld = function () {
         vijandX = random (1250, 1500);
     }
 
-    tekenveld ()
+    tekenVeld ()
     var offset = 0;
     offset= offset + 1;
     if (offset > 1280) {
@@ -138,7 +138,7 @@ var tekenSpeler = function(spelerX, spelerY) {
  * Updatet globale variabelen met positie van vijand of tegenspeler
  */
 var beweegVijand = function() {
-    
+    vijandX = vijandX - 1;
 };
 
 
