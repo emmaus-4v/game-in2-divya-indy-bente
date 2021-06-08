@@ -46,6 +46,8 @@ var score = 0; // aantal behaalde punten
  * Tekent het speelveld
  */
 var tekenVeld = function () {
+  
+  // wolken
   fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
  noStroke();
@@ -69,7 +71,6 @@ var tekenVeld = function () {
  
   ellipse(380, 535, 50, 50); 
 
-  
   // eerste buis
 
   fill("green");
