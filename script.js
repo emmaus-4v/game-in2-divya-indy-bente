@@ -81,7 +81,7 @@ var tekenVeld = function () {
         vijandX = random (1250, 1500);
     }
     console.log("voor regel 84");
-    tekenVeld ()
+    
     console.log("na regel 84");
     var offset = 0;
     offset= offset + 1;
