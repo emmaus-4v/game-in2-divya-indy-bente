@@ -81,13 +81,13 @@ var tekenVijand = function(x, y) {
     var x = 50;
     while (x < 1280) {
     rect(vijandX+offset+x, y, 45, 270);
-    x += 200;
+    x += 350;
     }
 
     var x = 50;
     while (x < 1280) {
     rect(vijandX+offset+x, 450, 45, 400);
-    x += 200;
+    x += 350;
     }
 
     if (vijandX < 0) {
