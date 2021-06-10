@@ -51,24 +51,23 @@ var tekenVeld = function() {
   rect(20, 20, width - 2 * 20, height - 2 * 20);
   noStroke();
   fill("white");//wolk 1
-  ellipse(offset+150,150, 50, 50); 
-  ellipse(offset+180,180, 50, 50);
+  ellipse(offset+150, 150, 50, 50); 
+  ellipse(offset+180, 180, 50, 50);
   ellipse(offset+180, 120, 50, 50);
   ellipse(offset+210, 150, 50, 50);
   ellipse(offset+180, 135, 50, 50);
   // wolk 2
-  ellipse(250, 250, 50, 50); //linker bolletje 
-  ellipse(280, 266, 50, 50);//onderste bolletje
-  ellipse(280, 220, 50, 50);//bovenste bolletje
-  ellipse(315, 250, 50, 50);//rechter bolletje 
-  ellipse(285, 235, 50, 50); //midden bolletje 
+  ellipse(offset+250, 250, 50, 50); //linker bolletje 
+  ellipse(offset+280, 266, 50, 50); //onderste bolletje
+  ellipse(offset+280, 220, 50, 50); //bovenste bolletje
+  ellipse(offset+315, 250, 50, 50); //rechter bolletje 
+  ellipse(offset+285, 235, 50, 50); //midden bolletje 
   //wolk 3
-  ellipse(350, 550, 50, 50);
-  ellipse(380, 566, 50, 50);
-  ellipse(380, 520, 50, 50);
-  ellipse(410, 550, 50, 50);
- 
-  ellipse(380, 535, 50, 50); 
+  ellipse(offset+350, 550, 50, 50);
+  ellipse(offset+380, 566, 50, 50);
+  ellipse(offset+380, 520, 50, 50);
+  ellipse(offset+410, 550, 50, 50);
+  
 
   // eerste buis
 
