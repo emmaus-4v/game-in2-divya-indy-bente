@@ -167,9 +167,7 @@ var beweegKogel = function() {
 /**
  * Het startscherm van het spel dat je moet zien aan het begin en als je dood gaat in het spel (uitlegscherm?)
  */
-var beginscherm = function() {
 
-};
 
 /**
  * Kijkt wat de toetsen/muis etc zijn.
@@ -268,10 +266,4 @@ function draw() {
       }
       break;
   }
-}
-function draw() {
-    switch (spelStatus) {
-        case GAMEOVER:
-          beginscherm();
-    }
 }

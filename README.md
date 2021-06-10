@@ -23,7 +23,7 @@ Uitbreiding: Tegenstanders die uit buizen komen
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 
-Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
+Uitbreiding: Bewegende voorwerpen
 - [x] wolken die bewegen
 - [x] buizen die op je af komen
 - [ ] *later uitwerken*
