@@ -12,8 +12,8 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
 - [x] teken speler
 - [x] beweeg speler
-- [ ] teken achtergrond (lucht/wolken)
-- [ ] teken buizen (of iets anders)
+- [x] teken achtergrond (lucht/wolken)
+- [x] teken buizen
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren
 - [ ] uitlegscherm
@@ -24,8 +24,8 @@ Uitbreiding: Tegenstanders die uit buizen komen
 - [ ] *later uitwerken*
 
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
-- [ ] *later uitwerken*
-- [ ] *later uitwerken*
+- [x] wolken die bewegen
+- [x] buizen die op je af komen
 - [ ] *later uitwerken*
 
 ## Credits
