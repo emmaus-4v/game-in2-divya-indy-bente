@@ -33,7 +33,7 @@ var vijandY = 0;   // y-positie van vijand
 
 var score = 0; // aantal behaalde punten
 
-
+var offset = 0;
 
 
 
@@ -45,14 +45,13 @@ var score = 0; // aantal behaalde punten
 /**
  * Tekent het speelveld
  */
-var tekenVeld = function () {
-  
+var tekenVeld = function() {
   // wolken
-  fill("skyblue");
+  //fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
- noStroke();
+  noStroke();
   fill("white");//wolk 1
-  ellipse(150,150, 50, 50); 
+  ellipse(offset+150,150, 50, 50); 
   ellipse(180,180, 50, 50);
   ellipse(180, 120, 50, 50);
   ellipse(210, 150, 50, 50);
@@ -80,16 +79,11 @@ var tekenVeld = function () {
     if (vijandX < 0) {
         vijandX = random (1250, 1500);
     }
-    console.log("voor regel 84");
-    
-    console.log("na regel 84");
-    var offset = 0;
-    offset= offset + 1;
-    if (offset > 1280) {
-        offset = 0;
-    }
+ };
 
-};
+
+
+
 
 
 /**
@@ -135,7 +129,13 @@ var tekenSpeler = function(spelerX, spelerY) {
     
 };
 
+var beweegVeld = function () {
 
+    offset= offset + 1;
+    if (offset > 1280) {
+        offset = 0;
+    };
+}
 /**
  * Updatet globale variabelen met positie van vijand of tegenspeler
  */
@@ -223,7 +223,8 @@ function draw() {
       beweegVijand();
       beweegKogel();
       beweegSpeler();
-      
+      beweegVeld();
+
       if (checkVijandGeraakt()) {
         // punten erbij
         // nieuwe vijand maken
