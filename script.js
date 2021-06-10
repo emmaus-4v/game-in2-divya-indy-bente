@@ -193,8 +193,13 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-    
-  return false;
+    for (var i = 0; i < vijandX; i++) {
+     if (vijandX[i] > spelerX && vijandX[i] < spelerX + 70 && vijandY[i] > spelerY - 50 && vijandY[i] <spelerY + 50) {}
+     if (vijandX[i]===spelerX && vijandY===spelerY )
+     return true;
+     if (vijandX[i] - spelerX < 40 && vijandY - spelerY > 40)
+     return false;
+    }
 };
 
 
