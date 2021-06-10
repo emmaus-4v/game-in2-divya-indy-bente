@@ -35,7 +35,7 @@ var score = 0; // aantal behaalde punten
 
 var offset = 0;
 
-
+var wolk = 50;
 
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
@@ -51,11 +51,11 @@ var tekenVeld = function() {
   rect(20, 20, width - 2 * 20, height - 2 * 20);
   noStroke();
   fill("white");//wolk 1
-  ellipse(offset+150, 150, 50, 50); 
-  ellipse(offset+180, 180, 50, 50);
-  ellipse(offset+180, 120, 50, 50);
-  ellipse(offset+210, 150, 50, 50);
-  ellipse(offset+180, 135, 50, 50);
+  ellipse(offset+wolk+100, wolk+100, wolk, wolk); 
+  ellipse(offset+wolk+130, wolk+130, wolk, wolk);
+  ellipse(offset+wolk+130, wolk+90, wolk, wolk);
+  ellipse(offset+wolk+160, wolk+100, wolk, wolk);
+  ellipse(offset+wolk+130, wolk+85, wolk, wolk);
   // wolk 2
   ellipse(offset+250, 250, 50, 50); //linker bolletje 
   ellipse(offset+280, 266, 50, 50); //onderste bolletje
