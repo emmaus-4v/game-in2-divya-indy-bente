@@ -73,8 +73,8 @@ var tekenVeld = function() {
   // eerste buis
 
   fill("green");
-    rect(45, 5, 45, 270);
-    rect(70, 390, 45, 400);
+    rect(offset+45, 5, 45, 270);
+    rect(offset+70, 390, 45, 400);
 
     if (vijandX < 0) {
         vijandX = random (1250, 1500);
