@@ -37,7 +37,6 @@ var offset = 0;
 
 var wolk = 50;
 
-var wolkY = 100;
 
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
