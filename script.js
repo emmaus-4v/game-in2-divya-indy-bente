@@ -69,21 +69,6 @@ var tekenVeld = function() {
   ellipse(offset+410, 550, 50, 50);
   
 
-  // eerste buis
-
-  fill("green");
-    rect(vijandX+offset+45, 5, 45, 270);
-    rect(vijandX+offset+70, 390, 45, 400);
-
-    if (vijandX < 0) {
-        vijandX = random (1250, 1500);
-    }
- };
-
-
-
-
-
 
 /**
  * Tekent de vijand
@@ -92,6 +77,13 @@ var tekenVeld = function() {
  */
 var tekenVijand = function(x, y) {
     
+    fill("green");
+    rect(vijandX + offset+45, 5, 45, 270);
+    rect(vijandX + offset+70, 390, 45, 400);
+
+    if (vijandX < 0) {
+        vijandX = random (1250, 1500);
+    }
 
 };
 
