@@ -65,18 +65,6 @@ var tekenVeld = function() {
     
   }
 
-  // wolk 2
-  ellipse(offset+250, 250, 50, 50); //linker bolletje 
-  ellipse(offset+280, 280, 50, 50); //onderste bolletje
-  ellipse(offset+280, 240, 50, 50); //onderste bolletje
-  ellipse(offset+310, 250, 50, 50); //rechter bolletje 
-  ellipse(offset+280, 235, 50, 50); //midden bolletje 
-  //wolk 3
-  ellipse(offset+350, 550, 50, 50);
-  ellipse(offset+380, 566, 50, 50);
-  ellipse(offset+380, 520, 50, 50);
-  ellipse(offset+410, 550, 50, 50);
-
  
 };
 
