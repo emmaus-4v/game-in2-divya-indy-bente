@@ -56,11 +56,11 @@ var tekenVeld = function() {
   fill("white");
   for (var wolkX = 50; wolkX < 5000; wolkX += 290) {
       for (var wolkY = 50; wolkY < 5000; wolkY += 270) {
-          ellipse(offset+wolkX+100, wolkY+100, wolk, wolk); 
-          ellipse(offset+wolkX+130, wolkY+120, wolk, wolk);
-          ellipse(offset+wolkX+130, wolkY+90, wolk, wolk);
-          ellipse(offset+wolkX+160, wolkY+100, wolk, wolk);
-          ellipse(offset+wolkX+130, wolkY+85, wolk, wolk);
+          ellipse(offset+wolkX+100, wolkY+100, wolk, wolk); //linker bolletje
+          ellipse(offset+wolkX+130, wolkY+120, wolk, wolk); //onderste bolletje
+          ellipse(offset+wolkX+130, wolkY+90, wolk, wolk); //onderste bolletje
+          ellipse(offset+wolkX+160, wolkY+100, wolk, wolk); //rechter bolletje 
+          ellipse(offset+wolkX+130, wolkY+85, wolk, wolk); //midden bolletje 
       }
     
   }
@@ -68,7 +68,7 @@ var tekenVeld = function() {
   // wolk 2
   ellipse(offset+250, 250, 50, 50); //linker bolletje 
   ellipse(offset+280, 280, 50, 50); //onderste bolletje
-  ellipse(offset+280, 240, 50, 50); //bovenste bolletje
+  ellipse(offset+280, 240, 50, 50); //onderste bolletje
   ellipse(offset+310, 250, 50, 50); //rechter bolletje 
   ellipse(offset+280, 235, 50, 50); //midden bolletje 
   //wolk 3
@@ -163,6 +163,13 @@ var beweegKogel = function() {
 
 };
 
+
+/**
+ * Het startscherm van het spel dat je moet zien aan het begin en als je dood gaat in het spel (uitlegscherm?)
+ */
+var beginscherm = function() {
+
+};
 
 /**
  * Kijkt wat de toetsen/muis etc zijn.
@@ -261,4 +268,10 @@ function draw() {
       }
       break;
   }
+}
+function draw() {
+    switch (spelStatus) {
+        case GAMEOVER:
+          beginscherm();
+    }
 }
