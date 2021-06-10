@@ -79,7 +79,7 @@ var tekenVijand = function(x, y) {
     
     fill("green");
     rect(vijandX+offset+x, y, 45, 270);
-    rect(vijandX+offset+5, 5, 45, 400);
+    rect(vijandX+offset+x, 450, 45, 400);
 
     if (vijandX < 0) {
         vijandX = random (1250, 1500);
