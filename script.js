@@ -47,15 +47,15 @@ var offset = 0;
  */
 var tekenVeld = function() {
   // wolken
-  //fill("skyblue");
+  fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
   noStroke();
   fill("white");//wolk 1
   ellipse(offset+150,150, 50, 50); 
-  ellipse(180,180, 50, 50);
-  ellipse(180, 120, 50, 50);
-  ellipse(210, 150, 50, 50);
-  ellipse(180, 135, 50, 50);
+  ellipse(offset+180,180, 50, 50);
+  ellipse(offset+180, 120, 50, 50);
+  ellipse(offset+210, 150, 50, 50);
+  ellipse(offset+180, 135, 50, 50);
   // wolk 2
   ellipse(250, 250, 50, 50); //linker bolletje 
   ellipse(280, 266, 50, 50);//onderste bolletje
@@ -131,7 +131,7 @@ var tekenSpeler = function(spelerX, spelerY) {
 
 var beweegVeld = function () {
 
-    offset= offset + 1;
+    offset= offset - 1;
     if (offset > 1280) {
         offset = 0;
     };
