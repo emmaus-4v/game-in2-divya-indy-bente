@@ -37,6 +37,8 @@ var offset = 0;
 
 var wolk = 50;
 
+var wolkY = 100;
+
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
 /* ********************************************* */
@@ -50,23 +52,32 @@ var tekenVeld = function() {
   fill("skyblue");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
   noStroke();
-  fill("white");//wolk 1
-  ellipse(offset+wolk+100, wolk+100, wolk, wolk); 
-  ellipse(offset+wolk+130, wolk+130, wolk, wolk);
-  ellipse(offset+wolk+130, wolk+90, wolk, wolk);
-  ellipse(offset+wolk+160, wolk+100, wolk, wolk);
-  ellipse(offset+wolk+130, wolk+85, wolk, wolk);
+
+  fill("white");
+  for (var wolkX = 50; wolkX < 5000; wolkX += 290) {
+      for (var wolkY = 50; wolkY < 5000; wolkY += 270) {
+          ellipse(offset+wolkX+100, wolkY+100, wolk, wolk); 
+          ellipse(offset+wolkX+130, wolkY+120, wolk, wolk);
+          ellipse(offset+wolkX+130, wolkY+90, wolk, wolk);
+          ellipse(offset+wolkX+160, wolkY+100, wolk, wolk);
+          ellipse(offset+wolkX+130, wolkY+85, wolk, wolk);
+      }
+    
+  }
+
   // wolk 2
   ellipse(offset+250, 250, 50, 50); //linker bolletje 
-  ellipse(offset+280, 266, 50, 50); //onderste bolletje
-  ellipse(offset+280, 220, 50, 50); //bovenste bolletje
-  ellipse(offset+315, 250, 50, 50); //rechter bolletje 
-  ellipse(offset+285, 235, 50, 50); //midden bolletje 
+  ellipse(offset+280, 280, 50, 50); //onderste bolletje
+  ellipse(offset+280, 240, 50, 50); //bovenste bolletje
+  ellipse(offset+310, 250, 50, 50); //rechter bolletje 
+  ellipse(offset+280, 235, 50, 50); //midden bolletje 
   //wolk 3
   ellipse(offset+350, 550, 50, 50);
   ellipse(offset+380, 566, 50, 50);
   ellipse(offset+380, 520, 50, 50);
   ellipse(offset+410, 550, 50, 50);
+
+ 
 };
 
 
