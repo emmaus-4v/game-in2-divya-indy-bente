@@ -77,13 +77,13 @@ var tekenVijand = function(x, y) {
     
     fill("green");
     var x = 50;
-    while (x < 1280) {
+    while (x < 2560) {
     rect(vijandX+offset+x, y, 45, 270);
     x += 350;
     }
 
     var x = 50;
-    while (x < 1280) {
+    while (x < 2560) {
     rect(vijandX+offset+x, 450, 45, 400);
     x += 350;
     }
