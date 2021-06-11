@@ -17,3 +17,26 @@ html, body {
    */ 
   margin: 0px;
 }
+
+#game {
+    overflow: hidden;
+}
+
+#buis {
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left:1250px}
+    100%{left:-200px}
+}
+
+#gat {
+    position: relative;
+    animation: block 2s infinite linear;
+}
+
+#vis {
+    position: absolute;
+    border-radius: 50%;
+}
