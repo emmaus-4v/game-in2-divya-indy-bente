@@ -178,7 +178,9 @@ else {
  * @returns {boolean} true als vijand is geraakt
  */
 var checkVijandGeraakt = function() {
-
+    if(abs(spelerX + 25) > 25 && abs(spelerY)< 3) {
+        spelStatus = GAMEOVER; 
+    }
   return false;
 };
 
