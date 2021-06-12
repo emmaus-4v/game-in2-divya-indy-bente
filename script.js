@@ -77,21 +77,23 @@ var tekenVeld = function() {
 var tekenVijand = function(x, y) {
     
     fill("green");
-    var x = 50;
-    while (x < 2560) {
-    rect(vijandX+offset+x, y, 45, 270);
-    x += 350;
+    var bovenX = 50;
+    while (bovenX < 2560) {
+    rect(vijandX+offset+bovenX, y, 45, 270);
+    bovenX += 350;
     }
 
-    var x = 50;
-    while (x < 2560) {
-    rect(vijandX+offset+x, 450, 45, 400);
-    x += 350;
+    var onderX = 50;
+    while (onderX < 2560) {
+    rect(vijandX+offset+onderX, 450, 45, 400);
+    onderX += 350;
     }
 
     if (vijandX < 0) {
         vijandX = random (1250, 1500);
     }
+
+    
 
 };
 
@@ -226,6 +228,8 @@ function setup() {
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
   background('skyblue');
+
+  
 }
 
 /**
@@ -241,7 +245,8 @@ function draw() {
       beweegSpeler();
       beweegVeld();
 
-      if (checkVijandGeraakt()) {
+      if (checkVijandGeraakt()){
+
         // punten erbij
         // nieuwe vijand maken
       }
