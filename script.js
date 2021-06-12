@@ -69,7 +69,7 @@ var tekenVeld = function() {
 };
 
 var tekenVeld2 = function() {
-    // zelfde veld komen als game scherm, zonder de buizen met een text/uitleg
+    fill("red");
 
 };
 
@@ -182,8 +182,13 @@ else {
  * @returns {boolean} true als vijand is geraakt
  */
 var checkVijandGeraakt = function() {
-    
-  return false;
+   if (spelerY < 230 && spelerY > 400) { 
+       score++
+       return true;
+   }
+   else {
+       return false;
+   }
 };
 
 
@@ -203,7 +208,7 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-   if (spelerY > 720) { // vogel op de grond
+   if (spelerY > 450) { // vogel op de grond
      return true;
    } else {
     return false;
@@ -221,11 +226,12 @@ var beginGame = function() {
 };
 
 var eindGame = function() {
-    tekenVeld();
-    textSize(65);
-    text("Score" + score, 300, 200, 1200, 500);
-    textSize(65);
-    text("Game Over", 400, 200, 1200, 500);
+    tekenVeld2();
+    textSize(70);
+    text("Score " + score, 400, 280, 1200, 500);
+    textSize(70);
+    text("Game Over", 400, 500, 1200, 500);
+    score = 0;
 };
 
 /**
