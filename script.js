@@ -178,9 +178,7 @@ else {
  * @returns {boolean} true als vijand is geraakt
  */
 var checkVijandGeraakt = function() {
-    if(abs(spelerX + 25) > 25 && abs(spelerY)< 3) {
-        spelStatus = GAMEOVER; 
-    }
+    
   return false;
 };
 
@@ -201,7 +199,8 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-   
+   if (spelerY === vijandY)
+   spelStatus = GAMEOVER;
     return false;
 };
 
@@ -269,3 +268,10 @@ function draw() {
       break;
   }
 }
+
+//function draw() {
+   // switch (spelStatus){
+    //case GAMEOVER:
+    //text(100, 50, "Game over")
+    //}
+//}
