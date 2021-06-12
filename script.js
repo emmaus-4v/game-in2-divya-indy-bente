@@ -197,15 +197,23 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-    for (var i = 0; i < vijandX; i++) {
-     if (vijandX[i] > spelerX && vijandX[i] < spelerX + 70 && vijandY[i] > spelerY - 50 && vijandY[i] <spelerY + 50) {}
-     if (vijandX[i]===spelerX && vijandY===spelerY )
-     return true;
-     if (vijandX[i] - spelerX < 40 && vijandY - spelerY > 40)
-     return false;
-    }
+   
+    return false;
 };
 
+var BeginGame = function() {
+    tekenVeld();
+    textSize(70);
+    text("Klik op enter om te starten", 200, 200 , 1200, 500);
+};
+
+var eindGame = function() {
+    tekenVeld();
+    textSize(65);
+    text("Score" + score, 300, 200, 1200, 500);
+    textSize(65);
+    text("Game Over", 400, 200, 1200, 500);
+};
 
 /**
  * setup
@@ -219,7 +227,6 @@ function setup() {
   // Kleur de achtergrond blauw, zodat je het kunt zien
   background('skyblue');
 }
-
 
 /**
  * draw
