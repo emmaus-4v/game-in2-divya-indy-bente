@@ -68,6 +68,10 @@ var tekenVeld = function() {
  
 };
 
+var tekenVeld2 = function() {
+    // zelfde veld komen als game scherm, zonder de buizen met een text/uitleg
+
+};
 
 /**
  * Tekent de vijand
@@ -204,7 +208,11 @@ var checkGameOver = function() {
     return false;
 };
 
-var BeginGame = function() {
+var checkStartGame = function() {
+
+}
+
+var beginGame = function() {
     tekenVeld();
     textSize(70);
     text("Klik op enter om te starten", 200, 200 , 1200, 500);
@@ -268,6 +276,21 @@ function draw() {
       break;
   }
 }
+
+//function draw() {
+    //switch (spelStatus) {
+      //  case UITLEG:
+        //    tekenVeld();
+    //        tekenVeld2();
+        //    checkStartGame();
+       // case SPELEN:
+       //     beweegVeld();
+             
+       //     if (checkSpelerGeraakt()) {
+                // punten erbij
+          //  }
+   // }
+//};
 
 //function draw() {
    // switch (spelStatus){
