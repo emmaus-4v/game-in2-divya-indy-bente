@@ -203,9 +203,11 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-   if (spelerY === vijandY)
-   spelStatus = GAMEOVER;
+   if (spelerY > 720) { // vogel op de grond
+     return true;
+   } else {
     return false;
+   }
 };
 
 var checkStartGame = function() {
@@ -273,6 +275,9 @@ function draw() {
       if (checkGameOver()) {
         spelStatus = GAMEOVER;
       }
+      break;
+      case GAMEOVER:
+        eindGame();
       break;
   }
 }
