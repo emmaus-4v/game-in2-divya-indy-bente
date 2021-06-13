@@ -294,4 +294,4 @@ function draw() {
         eindGame();
       break;
   }
-}
+};
