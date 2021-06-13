@@ -237,9 +237,9 @@ var beginGame = function() {
 var eindGame = function() {
     tekenVeld2();
     textSize(70);
-    text("Score: " + score, 450, 280, 1200, 500);
-    textSize(70);
-    text("Game Over", 400, 500, 1200, 500);
+    text("Score: " + score, 450, 360, 1200, 500);
+    textSize(80);
+    text("Game Over", 400, 270, 1200, 500);
 };
 
 /**
