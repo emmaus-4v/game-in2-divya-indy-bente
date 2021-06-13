@@ -269,10 +269,7 @@ function draw() {
       beweegVeld();
       
 
-      if (keyIsDown (13)){
-        case SPELEN:
-            beginGame();
-    }
+      
 
       if (checkVijandGeraakt()){
 
