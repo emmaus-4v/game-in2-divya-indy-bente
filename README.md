@@ -14,19 +14,14 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] beweeg speler
 - [x] teken achtergrond (lucht/wolken)
 - [x] teken buizen
-- [ ] punten op scherm zetten
-- [ ] punten kunnen scoren
-- [ ] uitlegscherm
+- [x] punten op scherm zetten
+- [x] punten kunnen scoren
+- [x] afgaan
 
-Uitbreiding: Tegenstanders die uit buizen komen
-- [ ] *later uitwerken*
-- [ ] *later uitwerken*
-- [ ] *later uitwerken*
 
 Uitbreiding: Bewegende voorwerpen
 - [x] wolken die bewegen
 - [x] buizen die op je af komen
-- [ ] *later uitwerken*
 
 ## Credits
 - Game template van het Emmauscollege Rotterdam https://github.com/emmauscollege/4HV-game-template
