@@ -107,16 +107,6 @@ var tekenVijand = function(x, y) {
 };
 
 
-/**
- * Tekent de kogel of de bal
- * @param {number} x x-coördinaat
- * @param {number} y y-coördinaat
- */
-var tekenKogel = function(x, y) {
-
-
-};
-
 
 /**
  * Tekent de speler
@@ -153,14 +143,6 @@ var beweegVijand = function() {
     vijandX = vijandX - 1;
 };
 
-
-/**
- * Updatet globale variabelen met positie van kogel of bal
- */
-var beweegKogel = function() {
-
-
-};
 
 
 /**
@@ -285,7 +267,6 @@ function draw() {
   switch (spelStatus) {
     case SPELEN:
       beweegVijand();
-      beweegKogel();
       beweegSpeler();
       beweegVeld();
 
@@ -302,7 +283,6 @@ function draw() {
 
       tekenVeld();
       tekenVijand(vijandX, vijandY);
-      tekenKogel(kogelX, kogelY);
       tekenSpeler(spelerX, spelerY);
 
       if (checkGameOver()) {
