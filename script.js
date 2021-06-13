@@ -191,9 +191,18 @@ var checkVijandGeraakt = function() {
        score++
        return true;
    }
+   if (abs(spelerX - vijandX)< 50) {
+       score++
+       return true;
+   }   
    else {
        return false;
    }
+
+  
+      
+   
+
 };
 
 
