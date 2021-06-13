@@ -263,6 +263,16 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+    switch (spelStatus) {
+        case UITLEG:
+            tekenVeld3();
+            beweegSpeler();
+            beweegVijand();
+    }
+};
+
+
+function draw() {
   switch (spelStatus) {
     case SPELEN:
       beweegVijand();
@@ -296,20 +306,6 @@ function draw() {
   }
 }
 
-//function draw() {
-    //switch (spelStatus) {
-      //  case UITLEG:
-        //    tekenVeld();
-    //        tekenVeld2();
-        //    checkStartGame();
-       // case SPELEN:
-       //     beweegVeld();
-             
-       //     if (checkSpelerGeraakt()) {
-                // punten erbij
-          //  }
-   // }
-//};
 
 //function draw() {
    // switch (spelStatus){
