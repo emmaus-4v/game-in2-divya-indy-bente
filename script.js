@@ -73,6 +73,11 @@ var tekenVeld2 = function() {
 
 };
 
+var tekenVeld3 = function() {
+    fill("black");
+
+};
+
 /**
  * Tekent de vijand
  * @param {number} x x-coördinaat
@@ -182,7 +187,7 @@ else {
  * @returns {boolean} true als vijand is geraakt
  */
 var checkVijandGeraakt = function() {
-   if (spelerY < 230 && spelerY > 400) { 
+   if (spelerY < 230 || spelerY > 400) { 
        score++
        return true;
    }
@@ -216,22 +221,25 @@ var checkGameOver = function() {
 };
 
 var checkStartGame = function() {
-
+    if (spelerX === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 var beginGame = function() {
-    tekenVeld();
+    tekenVeld3();
     textSize(70);
-    text("Klik op enter om te starten", 200, 200 , 1200, 500);
+    text("Klik op ENTER om te starten", 200, 200 , 1200, 500);
 };
 
 var eindGame = function() {
     tekenVeld2();
     textSize(70);
-    text("Score " + score, 450, 280, 1200, 500);
+    text("Score: " + score, 450, 280, 1200, 500);
     textSize(70);
     text("Game Over", 400, 500, 1200, 500);
-    score = 0;
 };
 
 /**
