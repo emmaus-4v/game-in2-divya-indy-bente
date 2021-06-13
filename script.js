@@ -105,7 +105,12 @@ var tekenVijand = function(x, y) {
 };
 
 /* Tekst in beeld in het begin, want het lukt ons niet om een beginscherm te maken.*/
-text()
+var uitlegScherm = function() {
+    textSize(80);
+    text("Welkom bij onze spel!", 200, 300, 400, 300);
+    text("Ontwijk de buizen en kom zo ver mogelijk", 200, 500, 400, 500);
+    text("Gaat het jou lukken?", 200, 700, 400, 700);
+}
 
 /**
  * Tekent de speler
@@ -270,10 +275,6 @@ function draw() {
       beweegVeld();
       
 
-      if (keyIsDown (13)){
-        case SPELEN:
-            beginGame();
-    }
 
       if (checkVijandGeraakt()){
 
