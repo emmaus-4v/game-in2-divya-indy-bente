@@ -37,7 +37,8 @@ var score = 0; // aantal behaalde punten
 var offset = 0;
 
 var wolk = 50;
-
+var onderX = 50;
+var bovenX = 50;
 
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
@@ -75,7 +76,7 @@ var tekenVeld2 = function() {
 
 var tekenVeld3 = function() {
     fill("black");
-
+   
 };
 
 /**
@@ -86,13 +87,13 @@ var tekenVeld3 = function() {
 var tekenVijand = function(x, y) {
     
     fill("green");
-    var bovenX = 50;
+    var bovenX = 50; /* bovenX zijn de bovenste buizen */
     while (bovenX < 2560) {
     rect(vijandX+offset+bovenX, y, 45, 270);
     bovenX += 350;
     }
 
-    var onderX = 50;
+    var onderX = 50; /* onderX zijn de onderste buizen */
     while (onderX < 2560) {
     rect(vijandX+offset+onderX, 450, 45, 400);
     onderX += 350;
@@ -191,7 +192,7 @@ var checkVijandGeraakt = function() {
        score++
        return true;
    }
-   if (abs(spelerX - vijandX)< 50) {
+   if (abs((spelerX + 25) - onderX && bovenX)< 50) {
        score++
        return true;
    }   
@@ -288,6 +289,12 @@ function draw() {
       beweegKogel();
       beweegSpeler();
       beweegVeld();
+      
+
+      if (keyIsDown (13)){
+        case SPELEN:
+            beginGame();
+    }
 
       if (checkVijandGeraakt()){
 
