@@ -26,9 +26,6 @@ var spelStatus = SPELEN;
 var spelerX = 200; // x-positie van speler
 var spelerY = 100; // y-positie van speler
 
-var kogelX = 0;    // x-positie van kogel
-var kogelY = 0;    // y-positie van kogel
-
 var vijandX = 0;   // x-positie van vijand
 var vijandY = 0;   // y-positie van vijand
 
@@ -294,11 +291,3 @@ function draw() {
       break;
   }
 }
-
-
-//function draw() {
-   // switch (spelStatus){
-    //case GAMEOVER:
-    //text(100, 50, "Game over")
-    //}
-//}
