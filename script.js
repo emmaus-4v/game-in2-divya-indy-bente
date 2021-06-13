@@ -104,7 +104,8 @@ var tekenVijand = function(x, y) {
 
 };
 
-
+/* Tekst in beeld in het begin, want het lukt ons niet om een beginscherm te maken.*/
+text()
 
 /**
  * Tekent de speler
@@ -269,7 +270,10 @@ function draw() {
       beweegVeld();
       
 
-      
+      if (keyIsDown (13)){
+        case SPELEN:
+            beginGame();
+    }
 
       if (checkVijandGeraakt()){
 
